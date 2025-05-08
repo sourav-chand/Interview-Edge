@@ -1,6 +1,4 @@
-<h1 align="center">✨ Video Calling Interview Platform ✨</h1>
-
-![Demo App](/public/screenshot-for-readme.png)
+<h1 align="center">✨ Enterview Edge ✨</h1>
 
 Highlights:
 
