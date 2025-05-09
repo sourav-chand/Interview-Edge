@@ -25,6 +25,13 @@ export const TIME_SLOTS = [
   "16:00",
   "16:30",
   "17:00",
+  "18:00",
+  "19:00",
+  "28:00",
+  "21:00",
+  "22:00",
+  "23:00",
+  "24:00",
 ];
 
 export const QUICK_ACTIONS = [
@@ -137,7 +144,8 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       {
         input: "x = 121",
         output: "true",
-        explanation: "121 reads as 121 from left to right and from right to left.",
+        explanation:
+          "121 reads as 121 from left to right and from right to left.",
       },
       {
         input: "x = -121",
