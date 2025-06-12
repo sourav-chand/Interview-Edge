@@ -7,6 +7,7 @@ export const syncUser = mutation({
     email: v.string(),
     clerkId: v.string(),
     image: v.optional(v.string()),
+    phone: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const existingUser = await ctx.db

@@ -45,17 +45,18 @@ http.route({
     const eventType = evt.type;
 
     if (eventType === "user.created") {
-      const { id, email_addresses, first_name, last_name, image_url } = evt.data;
+      const { id, email_addresses, first_name, last_name, image_url,phone_numbers } = evt.data;
 
       const email = email_addresses[0].email_address;
       const name = `${first_name || ""} ${last_name || ""}`.trim();
-
+      const phone = phone_numbers?.[0]?.phone_number;
       try {
         await ctx.runMutation(api.users.syncUser, {
           clerkId: id,
           email,
           name,
           image: image_url,
+          phone,
         });
       } catch (error) {
         console.log("Error creating user:", error);
